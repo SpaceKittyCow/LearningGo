@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"testingWithGo/Part1-ObjectsConstructionInGo/advInterfaces/animals"
+	"LearningGo/Part1-ObjectsConstructionInGo/advInterfaces/animals"
 )
 
 func main() {
