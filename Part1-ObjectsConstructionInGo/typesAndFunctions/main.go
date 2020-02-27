@@ -8,4 +8,7 @@ func main() {
 	p2 := Point{2, 2}    //different way of init any variable
 	fmt.Printf("%v", distanceBetween(p1, p2))
 }
-func distanceBetween(p1 Point, p2 Point) Point { return Point{p1.x - p2.x, p1.y - p2.y} }
+
+func distanceBetween(p1 Point, p2 Point) Point {
+	return Point{p1.x - p2.x, p1.y - p2.y}
+}

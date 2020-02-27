@@ -7,10 +7,11 @@ var point2 = []int{4, 5}  // x, y (slice of an array of int (not static amount, 
 
 //Main function is function that is run when run go run or the built executable  i
 func main() {
-	fmt.Printf("%v", DistanceBetween()) //prints file out into
-} 
+	x, y := DistanceBetween()
+	fmt.Printf("%d %d", x, y) //prints file out into
+}
 
 // DistanceBetween calculates the distance between two graph points x and y
-func DistanceBetween() (x, y) {
+func DistanceBetween() (x, y int) {
 	return (point1[0] - point2[0]), (point1[1] - point2[1]) //Can return multiple variables inline
 }

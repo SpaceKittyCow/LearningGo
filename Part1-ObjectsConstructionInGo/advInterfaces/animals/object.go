@@ -24,7 +24,7 @@ type Dog struct {
 	wag      string
 	paws     string
 	toeCount int
-	//Animal Animal //this will not work
+	//A        Animal //this will not work
 	Animal
 }
 
@@ -73,8 +73,8 @@ func (o Orca) FinCount() int {
 	return o.fins
 }
 
-// func initAllAnimals(distance int)(Cat, Dog, Orca){
-// func initAllAnimals(distance int)(Animals, Animals, Animals){
+//func InitAllAnimals(distance int) (Cat, Dog, Orca) {
+//func InitAllAnimals(distance int) (Animals, Animals, Animals) {
 func InitAllAnimals(distance int) (Pets, Pets, WaterAnimals) {
 	var animal = Animal{speed: 10, distance: distance, noise: "meow"}
 	var cat = Cat{purr: "purr", paws: "furry small", toeCount: 5, Animal: animal}
@@ -84,6 +84,6 @@ func InitAllAnimals(distance int) (Pets, Pets, WaterAnimals) {
 	var dog = Dog{wag: "wag the tail", paws: "furry big", toeCount: 4, Animal: animal}
 
 	var waterAnimal = Animal{speed: 40, distance: distance, noise: "splash"}
-	var orca = Orca{fins: 2, Animal: waterAnimal}
+	var orca = &Orca{fins: 2, Animal: waterAnimal}
 	return cat, dog, orca
 }

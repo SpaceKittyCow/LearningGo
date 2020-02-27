@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"LearningGo/Part1-ObjectsConstructionInGo/interfaces/animals"
+	"fmt"
 )
 
 func main() {
@@ -11,7 +11,6 @@ func main() {
 	fmt.Printf("CatMove: %d, DogMove %d ", catMove, DogMove)
 }
 
-func AnimalsMovement(cats animals.Animals,dogs animals.Animals) (int, int) {
+func AnimalsMovement(cats animals.Animals, dogs animals.Animals) (int, int) {
 	return cats.Move(), dogs.Move()
 }
-
